@@ -1,5 +1,5 @@
 {% set name = "thermostate" %}
-{% set version = "1.4.0" %}
+{% set version = "2.0.0.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/thermostate-{{ version }}.tar.gz
-  sha256: a9f5a34560bac87684bf184f7f6c4326425b60313a024c38bcee8dcb2a22e6ec
+  sha256: 4226f0db186be8d879bfc9a8bb5946e88e023988ee4748a12a04a43a136ce1b2
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
