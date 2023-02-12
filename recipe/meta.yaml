@@ -20,7 +20,7 @@ requirements:
     - python >=3.9
     - pdm-pep517
   run:
-    - coolprop >=6.4.3
+    - coolprop >=6.4.1
     - matplotlib-base >=3.5
     - numpy >=1.22
     - pint >0.20
