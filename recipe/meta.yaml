@@ -17,13 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
   run:
-    - coolprop >=6.1.0
-    - matplotlib-base >=2.0
-    - numpy >=1.15
-    - pint <0.20,>=0.9
-    - python >=3.7
+    - coolprop >=6.4.3
+    - matplotlib-base >=3.5
+    - numpy >=1.22
+    - pint >0.20
+    - python >=3.9
 
 test:
   imports:
