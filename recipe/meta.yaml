@@ -22,7 +22,7 @@ requirements:
     - coolprop >=6.1.0
     - matplotlib-base >=2.0
     - numpy >=1.15
-    - pint <1.0,>=0.9
+    - pint <0.20,>=0.9
     - python >=3.7
 
 test:
