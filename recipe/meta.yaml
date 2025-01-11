@@ -6,27 +6,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/thermostate-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/thermostate-{{ version }}.tar.gz
   sha256: 4226f0db186be8d879bfc9a8bb5946e88e023988ee4748a12a04a43a136ce1b2
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - pdm-pep517
   run:
     - coolprop >=6.4.1
     - matplotlib-base >=3.5
     - numpy >=1.22
     - pint >0.20
-    - python >=3.9
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - thermostate
 
